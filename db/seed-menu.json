@@ -1,0 +1,181 @@
+[
+  {
+    "slug": "pizza",
+    "name": "Pizzy",
+    "items": [
+      {
+        "name": "Margherita",
+        "description": "rajčata, mozzarella, čerstvá bazalka",
+        "price": 167
+      },
+      {
+        "name": "Funghi",
+        "description": "rajčata, mozzarella, žampióny",
+        "price": 175
+      },
+      {
+        "name": "Al tonno",
+        "description": "rajčata, mozzarella, tuňák, červená cibule, vejce",
+        "price": 199
+      },
+      {
+        "name": "Caprese",
+        "description": "rajčata, mozzarella (Fior di latte), plátky rajčat, čerstvá bazalka, drcený pepř, olivový olej extra virgine",
+        "price": 189
+      },
+      {
+        "name": "al prosciutto",
+        "description": "rajčata, mozzarella, dušená šunka",
+        "price": 189
+      },
+      {
+        "name": "salame",
+        "description": "rajčata, mozzarella, paprikový salám, česnek, kapie",
+        "price": 193
+      },
+      {
+        "name": "Vegetariana ",
+        "description": "rajčata, mozzarella, kukuřice, česnek, lilek, cuketa, červená paprika, žampióny, pórek, čerstvá bazalka",
+        "price": 185
+      },
+      {
+        "name": "quattro stagioni",
+        "description": "¼funghi, ¼margherita, ¼spinaci, ¼salame",
+        "price": 199
+      },
+      {
+        "name": "Spinaci",
+        "description": "rajčata, mozzarella, slanina, česnek, listový špenát, zastřené vejce",
+        "price": 199
+      },
+      {
+        "name": "Hawai",
+        "description": "rajčata, mozzarella, šunka, kousky ananasu",
+        "price": 199
+      },
+      {
+        "name": "con pollo",
+        "description": "smetana, mozzarella, kuřecí kousky marinované v bylinkách, slanina, listový špenát, česnek",
+        "price": 199
+      },
+      {
+        "name": "Diablo",
+        "description": "smetanovo-hořčičný základ, mozzarella, pikantní italský salám Spianata, klobása, peperoncino, česnek, kapie, drcený pepř",
+        "price": 224
+      }
+    ]
+  },
+  {
+    "slug": "pasta",
+    "name": "Těstoviny",
+    "items": [
+      {
+        "name": "Spaghetti Aglio-olio e peperoncino",
+        "description": "restovaný česnek na olivovém oleji, chilli papričky, petrželka, parmezán",
+        "price": 165
+      },
+      {
+        "name": "Spaghetti alla carbonara",
+        "description": "restovaná slanina se smetanou a vaječným žloutkem, parmezán",
+        "price": 189
+      },
+      {
+        "name": "Spaghetti pomodoro fresco",
+        "description": "restovaný česnek, čerstvá rajčata s červenou cibulkou a bazalkou, mozzarella (Fior di latte), rukola, bazalkový olej, drcený pepř",
+        "price": 195
+      },
+      {
+        "name": "Tagliatelle al salmone affumicato",
+        "description": "restované kousky uzeného lososa marinovaného v kopru, smetanová omáčka, rukola, citrón",
+        "price": 199
+      },
+      {
+        "name": "Tagliatelle gusto",
+        "description": "restované kousky vepřové panenky, slanina, sušená rajčata, červená cibule, demi glace, parmezán",
+        "price": 209
+      },
+      {
+        "name": "Tagliatelle con gamberi",
+        "description": "restované krevety, česnek, čerstvá rajčata, máslovo - vinná omáčka",
+        "price": 219
+      }
+    ]
+  },
+  {
+    "slug": "predkrmy",
+    "name": "Předkrmy",
+    "items": [
+      {
+        "name": "Carpaccio di manzo",
+        "description": "marinované plátky hovězího masa, rukola, hobliny parmezánu, drcený pepř, citrón, rozpečený domácí chléb s bazalkovým olejem",
+        "price": 209
+      },
+      {
+        "name": "Bruschetta con manzo",
+        "description": "restované kousky hovězího flanku, cheddar, jalapeños, česnek, rozmarýn, česnekový dresink na rozpečeném domácím chlebu, rukola",
+        "price": 159
+      },
+      {
+        "name": "Bruschetta con pomodoro",
+        "description": "rajčata s červenou cibulkou a bazalkou, marinovaný sýr fitaki v tymiánu, olivový olej na rozpečeném domácím chlebu, rukola",
+        "price": 139
+      },
+      {
+        "name": "Tartare di salmone",
+        "description": "tataráček z uzeného lososa dochucený červenou cibulkou, koprem, kapary, podávaný s koprovým dipem a rozpečeným domácím chlebem",
+        "price": 175
+      },
+      {
+        "name": "Confit di gamberi",
+        "description": "krevety konfitované s česnekem a čerstvým chilli, petrželka, rozpečený domácí chléb",
+        "price": 145
+      }
+    ]
+  },
+  {
+    "slug": "napoje",
+    "name": "Nápoje",
+    "items": [
+      {
+        "name": "Staropramen Ležák 11° 0,5l",
+        "description": "Čepované",
+        "price": 59
+      },
+      {
+        "name": "Staropramen Ležák 11° 0,3l",
+        "description": "Čepované",
+        "price": 47
+      },
+      {
+        "name": "Chardonay 0,1l",
+        "description": "Bílé víno, rozlévané",
+        "price": 38
+      },
+      {
+        "name": "Rose d Anjou Pierre Brévin0 0,1l",
+        "description": "Růžové víno, rozlévané",
+        "price": 40
+      },
+      {
+        "name": "Villa Italia 0,15l",
+        "description": "Prosecco, rozlévané",
+        "price": 76
+      },
+      {
+        "name": "Primitivo 0,1l",
+        "description": "Červené víno, rozlévané",
+        "price": 38
+      },
+      {
+        "name": "Coca Cola 0,33l",
+        "description": "",
+        "price": 49
+      },
+      {
+        "name": "Sprite 0,33l",
+        "description": "",
+        "price": 49
+      }
+    ]
+  }
+]

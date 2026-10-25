@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cihla: #c34b22;
+  --color-back1: #f8f5f2;
+  --color-back2: #e7e7e0;
+  --color-back3: #f4f0ec;
+  --color-passive: #ebe6e0;
+  --color-input: #e4dfd7;
+  --color-line: #e0dad1;
+  --font-head: var(--font-poiret), sans-serif;
+  --font-body: var(--font-lato), sans-serif;
+}
+
+/* v base vrstvě, aby je šlo přebít utilitami (např. font-body v administraci) */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: #1f2937;
+  }
+
+  h1,
+  h2 {
+    font-family: var(--font-head);
+  }
+}
+
+/* ---------- veřejný web ---------- */
+
+.desk-menu a {
+  display: inline-block;
+  padding: 2px 15px;
+  border-radius: 15px;
+  transition:
+    background-color 200ms,
+    color 200ms;
+}
+
+.desk-menu a:hover {
+  background-color: var(--color-cihla);
+  color: #fff;
+}
+
+.menu-card {
+  animation: slide-fade 0.4s ease both;
+}
+
+.tracking-in-expand-fwd {
+  animation: tracking-in-expand-fwd 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-fade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-zoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.hero-zoom {
+  animation: hero-zoom 15s ease-in-out infinite;
+}
+
+/* fade-in při scrollování (třídu .visible přidává FadeIn) */
+.tag {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-timing-function: ease-out;
+}
+.fadein {
+  transition-duration: 2s;
+}
+.from-bottom {
+  transform: translateY(2vh);
+  transition-duration: 0.6s;
+}
+.from-top {
+  transform: translateY(-2vh);
+  transition-duration: 0.4s;
+}
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .tag {
+    opacity: 1;
+    transform: none;
+  }
+  .hero-zoom,
+  .tracking-in-expand-fwd,
+  .menu-card {
+    animation: none;
+  }
+}
+
+/* ---------- formuláře ---------- */
+
+.field {
+  @apply w-full rounded-lg border border-input bg-back3 px-4 py-3 transition-all focus:outline-none focus:ring-2 focus:ring-cihla/50;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg bg-cihla px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:bg-cihla/90 disabled:cursor-not-allowed disabled:opacity-60;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-lg border border-[#d3cdc4] bg-back3 px-4 py-2 text-sm text-gray-700 transition hover:bg-back2 disabled:opacity-60;
+}
