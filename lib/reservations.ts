@@ -145,7 +145,7 @@ export async function createPublicReservation(
 
   if (!isValidDate(date) || !TIME_SLOTS.includes(time)) return fail("Neplatné datum nebo čas.");
   if (!Number.isInteger(guests) || guests < 1 || guests > MAX_ONLINE_GUESTS) {
-    return fail(`Online lze rezervovat pro 1–${MAX_ONLINE_GUESTS} osoby.`);
+    return fail(`Online lze rezervovat pro 1-${MAX_ONLINE_GUESTS} osoby.`);
   }
   if (!table) return fail("Neplatný stůl.");
   if (table.capacity < guests) return fail(`Stůl ${table.id} je jen pro ${table.capacity} osoby.`);
@@ -212,7 +212,7 @@ type EmailData = {
 };
 
 function summary(r: EmailData): string {
-  return `${formatDate(r.start)}, ${formatTime(r.start)}–${formatTime(r.end)}, stůl ${r.table}, počet osob: ${r.guests}`;
+  return `${formatDate(r.start)}, ${formatTime(r.start)}-${formatTime(r.end)}, stůl ${r.table}, počet osob: ${r.guests}`;
 }
 
 function confirmationEmail(r: EmailData, baseUrl: string, token: string) {
@@ -221,7 +221,7 @@ function confirmationEmail(r: EmailData, baseUrl: string, token: string) {
 
   return {
     to: r.email,
-    subject: "Potvrďte prosím rezervaci – Pizzerie Alberto",
+    subject: "Potvrďte prosím rezervaci - Pizzerie Alberto",
     html: `
       <div style="font-family:system-ui,Segoe UI,Arial,sans-serif;line-height:1.5;color:#1f2937">
         <h2 style="margin:0 0 12px">Potvrďte prosím rezervaci</h2>
@@ -248,7 +248,7 @@ function infoEmail(r: EmailData, baseUrl: string, token: string) {
   const cancelUrl = `${baseUrl}/rezervace/zrusit?token=${token}`;
   return {
     to: r.email,
-    subject: "Vaše rezervace – Pizzerie Alberto",
+    subject: "Vaše rezervace - Pizzerie Alberto",
     html: `
       <div style="font-family:system-ui,Segoe UI,Arial,sans-serif;line-height:1.5;color:#1f2937">
         <h2 style="margin:0 0 12px">Rezervace stolu</h2>
@@ -376,7 +376,7 @@ function validateAdminInput(input: AdminReservationInput) {
   if (!isValidDate(input.date) || !isValidTime(input.time)) return fail("Neplatné datum nebo čas.");
   if (!TABLE_IDS.includes(input.table)) return fail("Neplatný stůl.");
   if (!Number.isInteger(input.guests) || input.guests < 1 || input.guests > 10) {
-    return fail("Počet osob musí být 1–10.");
+    return fail("Počet osob musí být 1-10.");
   }
   if (!["pending", "confirmed", "cancelled"].includes(input.status)) return fail("Neplatný stav.");
   return validateContact(input, { emailRequired: false });

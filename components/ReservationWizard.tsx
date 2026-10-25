@@ -210,7 +210,7 @@ function StepTable({
     }
     const freeSmall = TABLES.some((t) => t.type === "small" && !busySet.has(t.id));
     if (guests <= 2 && table.type === "large" && freeSmall) {
-      setHint("Pro 1–2 osoby prosím vyberte stůl pro 2 osoby, dokud jsou volné.");
+      setHint("Pro 1-2 osoby prosím vyberte stůl pro 2 osoby, dokud jsou volné.");
       return;
     }
     onSelect(table.id);
@@ -274,7 +274,7 @@ function StepTable({
           <p className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-xs text-amber-800">{hint}</p>
         ) : (
           <p className="text-xs text-gray-500">
-            Pro 1–2 osoby jsou upřednostněny stoly pro 2 osoby. Pokud nejsou volné, můžete vybrat i čtyřmístný stůl.
+            Pro 1-2 osoby jsou upřednostněny stoly pro 2 osoby. Pokud nejsou volné, můžete vybrat i čtyřmístný stůl.
           </p>
         )}
       </div>
@@ -363,7 +363,7 @@ function StepContact({
             placeholder="Např. dětská židlička, alergie…"
           />
         </label>
-        {/* past na roboty – člověk pole nevidí */}
+        {/* past na roboty - člověk pole nevidí */}
         <input
           type="text"
           name="website"

@@ -104,7 +104,7 @@ export default async function ReservationsPage({ searchParams }: PageProps<"/adm
                   <tr key={r.id} className="border-b border-line/60 align-top last:border-0">
                     <td className="px-3 py-3 pl-6 whitespace-nowrap">{formatDate(r.date_from)}</td>
                     <td className="px-3 py-3 whitespace-nowrap">
-                      {formatTime(r.date_from)}–{formatTime(r.date_to)}
+                      {formatTime(r.date_from)}-{formatTime(r.date_to)}
                     </td>
                     <td className="px-3 py-3 font-semibold">{r.table_label}</td>
                     <td className="px-3 py-3">

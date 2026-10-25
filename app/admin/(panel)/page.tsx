@@ -81,7 +81,7 @@ export default async function DashboardPage({ searchParams }: PageProps<"/admin"
           </form>
         }
       >
-        Přehled – {formatDate(date)}
+        Přehled - {formatDate(date)}
       </PageTitle>
 
       <div className="grid gap-4 sm:grid-cols-3">
@@ -182,7 +182,7 @@ export default async function DashboardPage({ searchParams }: PageProps<"/admin"
                           r.status === "confirmed" ? "bg-green-600" : "bg-yellow-500"
                         }`}
                         style={span(r, date)}
-                        title={`${r.date_from.slice(11)}–${r.date_to.slice(11)} ${r.name} (${r.guests} os.)`}
+                        title={`${r.date_from.slice(11)}-${r.date_to.slice(11)} ${r.name} (${r.guests} os.)`}
                       >
                         {r.name}
                       </Link>

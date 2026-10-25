@@ -14,7 +14,7 @@ function Chevron({ up = false }: { up?: boolean }) {
   );
 }
 
-/** Seznam položek jedné kategorie – řazení přetažením myší nebo šipkami. */
+/** Seznam položek jedné kategorie - řazení přetažením myší nebo šipkami. */
 export default function MenuSorter({ items: initial }: { items: Item[] }) {
   const [items, setItems] = useState(initial);
   const [dragId, setDragId] = useState<number | null>(null);

@@ -17,7 +17,7 @@ export default async function BlocksPage() {
 
       <Card title="Nová blokace">
         <p className="mb-4 text-gray-600">
-          Zablokované stoly nejdou v daném čase rezervovat online – např. kvůli uzavřené společnosti nebo opravě.
+          Zablokované stoly nejdou v daném čase rezervovat online - např. kvůli uzavřené společnosti nebo opravě.
         </p>
         <BlockForm today={todayLocal()} />
       </Card>
@@ -41,7 +41,7 @@ export default async function BlocksPage() {
                 <tr key={b.id} className="border-b border-line/60 last:border-0">
                   <td className="py-2">{formatDate(b.date_from)}</td>
                   <td className="py-2">
-                    {formatTime(b.date_from)}–{formatTime(b.date_to)}
+                    {formatTime(b.date_from)}-{formatTime(b.date_to)}
                   </td>
                   <td className="py-2 font-semibold">{b.table_label ?? "Všechny"}</td>
                   <td className="py-2 text-gray-600">{b.reason}</td>

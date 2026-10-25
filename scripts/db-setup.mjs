@@ -7,7 +7,7 @@ import { schemaStatements, seedMenu } from "../db/schema.mjs";
 const url = process.env.DATABASE_URL;
 
 if (!url) {
-  console.log("[db-setup] DATABASE_URL není nastavená – přeskakuji.");
+  console.log("[db-setup] DATABASE_URL není nastavená - přeskakuji.");
   process.exit(0);
 }
 

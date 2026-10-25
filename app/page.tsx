@@ -10,7 +10,7 @@ import { getMenu } from "@/lib/menu";
 export const dynamic = "force-dynamic";
 
 const PHONE = "+420 777 852 963";
-const HOURS = "Po–Ne: 11:00–23:00";
+const HOURS = "Po-Ne: 11:00-23:00";
 
 function Divider({ className = "my-4" }: { className?: string }) {
   return <div className={`mx-auto h-0.5 w-24 rounded-full bg-cihla ${className}`} />;
@@ -146,7 +146,7 @@ export default async function Home() {
               <SectionTitle bg="bg-back1">Galerie</SectionTitle>
               <p className="mx-auto mt-8 w-fit rounded-xl bg-back1 p-2">
                 Přivítá Vás útulný interiér v přírodním stylu, který voní dřevem a cihlou. V létě se restaurace
-                otevírá ven – na prostornou zahrádku obklopenou zelení, kde se zpomalí čas a jídlo chutná ještě lépe.
+                otevírá ven - na prostornou zahrádku obklopenou zelení, kde se zpomalí čas a jídlo chutná ještě lépe.
                 A zatímco vy si vychutnáváte oběd či večeři, děti se mohou zabavit na menším hřišti vedle zahrádky.
               </p>
             </div>

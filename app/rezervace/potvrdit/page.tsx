@@ -5,7 +5,7 @@ import { BackHome, Notice, PageShell, ReservationSummary } from "../ReservationC
 
 export const metadata: Metadata = { title: "Potvrzení rezervace | Pizzerie Alberto", robots: "noindex" };
 
-// Potvrzení vyžaduje kliknutí na tlačítko – samotné otevření odkazu nic nemění,
+// Potvrzení vyžaduje kliknutí na tlačítko - samotné otevření odkazu nic nemění,
 // takže rezervaci nepotvrdí ani poštovní filtr, který odkazy v e-mailech prochází.
 export default async function ConfirmPage({ searchParams }: PageProps<"/rezervace/potvrdit">) {
   const { token } = await searchParams;

@@ -1,4 +1,4 @@
-// Schéma databáze – sdílené mezi build skriptem (scripts/db-setup.mjs)
+// Schéma databáze - sdílené mezi build skriptem (scripts/db-setup.mjs)
 // a lokální vývojovou databází (lib/db.ts). Všechny příkazy jsou idempotentní.
 
 export const schemaStatements = [

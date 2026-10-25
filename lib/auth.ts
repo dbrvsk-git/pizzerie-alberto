@@ -11,11 +11,11 @@ import {
   type SessionPayload,
 } from "@/lib/session";
 
-// hash náhodného hesla – použije se, když účet neexistuje
+// hash náhodného hesla - použije se, když účet neexistuje
 const DUMMY_HASH = "$2b$12$E2PMR7yToiPC76f4mO5yqudn2g8va6bkJHlZ9gFIJizN0KbSW14hy";
 
 /**
- * Ověří přihlášení. Volá se v každé admin stránce i server action –
+ * Ověří přihlášení. Volá se v každé admin stránce i server action -
  * proxy.ts dělá jen rychlé přesměrování a sám o sobě nic nechrání.
  */
 export async function requireAdmin(): Promise<SessionPayload> {

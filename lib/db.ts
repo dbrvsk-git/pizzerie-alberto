@@ -7,7 +7,7 @@ import { schemaStatements, seedMenu } from "@/db/schema.mjs";
 type Row = Record<string, unknown>;
 type QueryFn = (text: string, params?: unknown[]) => Promise<Row[]>;
 
-// Next bundluje stránky a route handlery zvlášť – připojení sdílíme přes globalThis,
+// Next bundluje stránky a route handlery zvlášť - připojení sdílíme přes globalThis,
 // aby lokální PGlite neběžel ve více kopiích nad stejnými soubory.
 const globalDb = globalThis as typeof globalThis & { __pizzeriaDb?: Promise<QueryFn> };
 

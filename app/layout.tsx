@@ -17,7 +17,7 @@ const poiret = Poiret_One({
 export const metadata: Metadata = {
   title: "Pizzerie Alberto",
   description:
-    "Italská pizzerie v Praze 2 – jídelní lístek a online rezervace stolu. Itálie s láskou už od roku 2005.",
+    "Italská pizzerie v Praze 2 - jídelní lístek a online rezervace stolu. Itálie s láskou už od roku 2005.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

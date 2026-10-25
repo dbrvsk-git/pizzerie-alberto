@@ -25,7 +25,7 @@ export default async function SetupPage() {
         ) : (
           <>
             <p className="mb-6 text-gray-600">
-              Vytvořte účet administrátora. Tato stránka funguje jen jednou – dokud žádný účet neexistuje.
+              Vytvořte účet administrátora. Tato stránka funguje jen jednou - dokud žádný účet neexistuje.
             </p>
             <SetupForm needsKey={Boolean(process.env.SETUP_KEY || process.env.VERCEL)} />
           </>

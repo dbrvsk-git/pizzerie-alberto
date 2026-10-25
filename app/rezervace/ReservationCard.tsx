@@ -23,7 +23,7 @@ export function ReservationSummary({ reservation: r }: { reservation: Reservatio
       <dd>{formatDate(r.date_from)}</dd>
       <dt className="text-gray-500">Čas</dt>
       <dd>
-        {formatTime(r.date_from)}–{formatTime(r.date_to)}
+        {formatTime(r.date_from)}-{formatTime(r.date_to)}
       </dd>
       <dt className="text-gray-500">Stůl</dt>
       <dd>{r.table_label}</dd>

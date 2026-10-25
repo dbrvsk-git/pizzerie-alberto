@@ -14,7 +14,7 @@ export type ActionResult = { ok: true } | { ok: false; error: string };
 export async function createReservation(
   input: PublicReservationInput & { website?: string },
 ): Promise<ActionResult> {
-  // honeypot: skryté pole vyplní jen roboti – tváříme se, že vše proběhlo
+  // honeypot: skryté pole vyplní jen roboti - tváříme se, že vše proběhlo
   if (input.website) return { ok: true };
 
   const result = await createPublicReservation(

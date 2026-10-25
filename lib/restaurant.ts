@@ -26,7 +26,7 @@ export const MAX_ONLINE_GUESTS = 4;
 /** Jak daleko dopředu lze rezervovat online. */
 export const MAX_DAYS_AHEAD = 90;
 
-/** Časy začátku rezervace (otevřeno 11–23, poslední rezervace ve 21:00). */
+/** Časy začátku rezervace (otevřeno 11-23, poslední rezervace ve 21:00). */
 export const TIME_SLOTS = Array.from({ length: 19 }, (_, i) => {
   const minutes = 12 * 60 + i * 30;
   return `${String(Math.floor(minutes / 60)).padStart(2, "0")}:${minutes % 60 ? "30" : "00"}`;

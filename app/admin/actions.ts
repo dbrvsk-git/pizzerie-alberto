@@ -37,7 +37,7 @@ export type FormState =
 const str = (formData: FormData, key: string) => String(formData.get(key) ?? "");
 
 /**
- * Chyba formuláře včetně odeslaných hodnot – React po odeslání formulář vyprázdní,
+ * Chyba formuláře včetně odeslaných hodnot - React po odeslání formulář vyprázdní,
  * takže je formulář po chybě vyplní znovu (hesla záměrně ne).
  */
 function formError(error: string, formData: FormData): FormState {
